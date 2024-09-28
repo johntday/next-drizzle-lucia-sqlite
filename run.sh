@@ -1,7 +1,8 @@
 #!/bin/bash -e
 
 pushd ./drizzle/migrate
+npm run db:push
 npm run db:migrate
-popd 
+popd
 
 node server.js
